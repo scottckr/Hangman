@@ -16,8 +16,6 @@ public class GameActivity extends AppCompatActivity {
             R.drawable.hang7, R.drawable.hang8, R.drawable.hang9, R.drawable.hang10
     };
 
-    ImageView hangmanImage = (ImageView)findViewById(R.id.hangman_image);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +37,8 @@ public class GameActivity extends AppCompatActivity {
     public void guessLetter(View view) {
         tries -= 1;
 
+        ImageView hangmanImage = (ImageView)findViewById(R.id.hangman_image);
+
         hangmanImage.setImageResource(images[10]);
 
         EditText guessedLetter = (EditText)findViewById(R.id.guess_text);
@@ -52,6 +52,8 @@ public class GameActivity extends AppCompatActivity {
         String triesRemaining = tries + " försök kvar.";
         triesLeft.setText(triesRemaining);
 
-        lettersGuessed.setText(guessedLetters + letter);
+        String lettersText = guessedLetters + letter;
+
+        lettersGuessed.setText(lettersText);
     }
 }
