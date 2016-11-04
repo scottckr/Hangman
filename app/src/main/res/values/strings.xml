@@ -19,4 +19,7 @@
     <string name="guessed_letters_text"></string>
     <string name="result_title">Spelresultat</string>
     <string name="play_again">Spela igen</string>
+    <string name="tries_left">försök kvar.</string>
+    <string name="only_letters_allowed">Du får endast använda bokstäver!</string>
+    <string name="already_guessed_letter">Du har redan gissat på denna bokstav!</string>
 </resources>

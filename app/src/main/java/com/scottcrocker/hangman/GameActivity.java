@@ -123,7 +123,7 @@ public class GameActivity extends AppCompatActivity {
             if (!isCorrect(letter)) {
                 tries -= 1;
                 TextView triesLeft = (TextView) findViewById(R.id.tries_left_text);
-                String triesRemaining = tries + " försök kvar.";
+                String triesRemaining = tries + " " + getString(R.string.tries_left);
                 triesLeft.setText(triesRemaining);
                 hangmanImage.setImageResource(images[tries]);
             } else {
@@ -150,9 +150,9 @@ public class GameActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         } else if (!isLetter(letter)) {
-            guessedLetter.setError("Du får endast använda bokstäver!");
+            guessedLetter.setError(getString(R.string.only_letters_allowed));
         } else if (hasBeenGuessed(letter, lettersGuessed)) {
-            guessedLetter.setError("Du har redan gissat på denna bokstav!");
+            guessedLetter.setError(getString(R.string.already_guessed_letter));
         }
     }
 

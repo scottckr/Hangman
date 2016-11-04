@@ -37,7 +37,7 @@ public class ResultActivity extends AppCompatActivity {
         TextView triesLeftText = (TextView)findViewById(R.id.result_tries_remain);
         String triesLeft = "";
         if (hasWon) {
-            triesLeft = "Antal försök kvar: " + tries;
+            triesLeft = getString(R.string.result_tries_remain) + " " + tries;
         }
         triesLeftText.setText(triesLeft);
     }
