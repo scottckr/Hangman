@@ -17,6 +17,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.mipmap.hangman_logo);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(R.string.toolbar_menu_text);
     }
