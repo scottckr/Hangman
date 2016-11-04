@@ -11,6 +11,11 @@ import static com.scottcrocker.hangman.GameActivity.TRIESLEFT_KEY;
 import static com.scottcrocker.hangman.GameActivity.WINORLOSS_KEY;
 import static com.scottcrocker.hangman.GameActivity.WORDWAS_KEY;
 
+/**
+ * The result activity, which displays whether or not the player has lost.
+ * Shows what the correct word was.
+ * If the player won, it's shown how many tries the player had left before losing.
+ */
 public class ResultActivity extends AppCompatActivity {
 
     @Override
@@ -46,6 +51,10 @@ public class ResultActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Creates an intent and brings the player back to the menu.
+     * @param view The view component that is executed by click handler.
+     */
     public void backToMenu(View view) {
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);

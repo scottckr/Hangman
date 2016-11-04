@@ -9,7 +9,7 @@
     <string name="about_title">Om appen</string>
     <string name="result_text">Resultat</string>
     <string name="result_won_text">Du vann!</string>
-    <string name="result_lost_text">Du förlorade...</string>
+    <string name="result_lost_text">Du förlorade&#8230;</string>
     <string name="word_was">Ordet var:</string>
     <string name="result_tries_remain">Antal försök kvar:</string>
     <string name="back_to_menu_button">Tillbaka till huvudmenyn</string>

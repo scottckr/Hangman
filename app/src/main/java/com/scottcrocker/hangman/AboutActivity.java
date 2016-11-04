@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+/**
+ * A simple display for information on who created the application.
+ */
 public class AboutActivity extends AppCompatActivity {
 
     @Override
