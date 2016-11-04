@@ -39,7 +39,11 @@ public class GameActivity extends AppCompatActivity {
             R.drawable.hang3, R.drawable.hang4, R.drawable.hang5, R.drawable.hang6,
             R.drawable.hang7, R.drawable.hang8, R.drawable.hang9, R.drawable.hang10
     };
-    private ArrayList<String> wordsList = new ArrayList<>(Arrays.asList("SHEEP", "DREAM"));
+    private ArrayList<String> wordsList = new ArrayList<>(Arrays.asList("SHEEP", "DREAM", "WORD",
+            "BIKE", "FOOTBALL", "MUSIC", "GUITAR", "APPLE", "BANANA", "PLANET", "KEY", "CAR",
+            "TRAIN", "BEER", "WHISKEY", "MONEY", "BIRTHDAY", "CHRISTMAS", "SQUIRREL", "SCHOOL",
+            "TABLE", "CHAIR", "WINDOW", "HOUSE", "PANCAKE", "CHURCH", "MOTHER", "FATHER", "BROTHER",
+            "SISTER", "COUSIN", "CHINA", "EUROPE", "AMERICA", "AFRICA"));
     private String secretWord;
     private char[] hiddenWord;
     private TextView tvSecretWord;
@@ -102,9 +106,9 @@ public class GameActivity extends AppCompatActivity {
         EditText guessedLetter = (EditText) findViewById(R.id.guess_text);
         TextView lettersGuessed = (TextView) findViewById(R.id.guessed_letters);
         char letter = guessedLetter.getText().toString().toUpperCase().charAt(0);
+        ImageView hangmanImage = (ImageView) findViewById(R.id.hangman_image);
 
         if (isLetter(letter) && !hasBeenGuessed(letter, lettersGuessed)) {
-            ImageView hangmanImage = (ImageView) findViewById(R.id.hangman_image);
             guessedLetter.setText("");
 
             String guessedLetters = lettersGuessed.getText().toString();

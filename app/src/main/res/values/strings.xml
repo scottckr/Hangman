@@ -4,7 +4,7 @@
     <string name="hangman_text">Hangman</string>
     <string name="play_game">Spela!</string>
     <string name="about_button">Om</string>
-    <string name="about_text">Appen skapad av Scott Crocker.</string>
+    <string name="about_text">Appen skapad av Scott Crocker, 2016.</string>
     <string name="toolbar_menu_text">Huvudmeny</string>
     <string name="about_title">Om appen</string>
     <string name="result_text">Resultat</string>
@@ -18,4 +18,5 @@
     <string name="tries_left_text">10 försök kvar</string>
     <string name="guessed_letters_text"></string>
     <string name="result_title">Spelresultat</string>
+    <string name="play_again">Spela igen</string>
 </resources>

@@ -59,4 +59,13 @@ public class ResultActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
     }
+
+    /**
+     * Creates an intent and starts a new game.
+     * @param view The view component that is executed by click handler.
+     */
+    public void playAgain(View view) {
+        Intent intent = new Intent(this, GameActivity.class);
+        startActivity(intent);
+    }
 }

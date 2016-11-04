@@ -33,10 +33,19 @@
         android:text="@string/result_tries_remain"/>
 
     <Button
-        android:id="@+id/result_back_to_menu"
+        android:id="@+id/play_again"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/result_tries_remain"
+        android:text="@string/play_again"
+        android:textAllCaps="false"
+        android:onClick="playAgain"/>
+
+    <Button
+        android:id="@+id/result_back_to_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_again"
         android:text="@string/back_to_menu_button"
         android:textAllCaps="false"
         android:onClick="backToMenu"/>
